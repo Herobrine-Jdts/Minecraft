@@ -5,7 +5,6 @@ copy /y "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Crack\Adv
 copy /y "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Crack\ArtbookOST\ELDEN RING Digital Artbook & Soundtrack_Data\Plugins\x86_64\steam_api64.dll" "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\ArtbookOST\ELDEN RING Digital Artbook & Soundtrack_Data\Plugins\x86_64\steam_api64.dll"
 copy /y "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Crack\Game\steam_api64.dll" "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\steam_api64.dll"
 rem 判断是否已开启Anti-cheat
-set arg="D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\start_protected_game.exe"
 set md5=6ea87d309cbda60c53948769b8d595c4
 certutil -hashfile "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\start_protected_game.exe" MD5 | find /v ":" > md5.md5
 set /p now_md5=<md5.md5
