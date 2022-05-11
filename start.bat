@@ -8,12 +8,14 @@ certutil -hashfile %AdvGuide% MD5 | find /v ":" > %md5_road%
 set /p md5=<%md5_road%
 if not "23390ac384575350c1286bb357666b81" == "%md5%" (copy /y "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Crack\AdvGuide\ELDEN RING Adventure Guide_Data\Plugins\x86_64\steam_api64.dll" %AdvGuide%)
 del /q %md5_road%
+set md5=0
 
 set ArtbookOST="D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\ArtbookOST\ELDEN RING Digital Artbook & Soundtrack_Data\Plugins\x86_64\steam_api64.dll"
 certutil -hashfile %ArtbookOST% MD5 | find /v ":" > %md5_road%
 set /p md5=<%md5_road%
 if not "23390ac384575350c1286bb357666b81" == "%md5%" (copy /y "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Crack\ArtbookOST\ELDEN RING Digital Artbook & Soundtrack_Data\Plugins\x86_64\steam_api64.dll" %ArtbookOST%)
 del /q %md5_road%
+set md5=0
 
 set Game="D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\steam_api64.dll"
 certutil -hashfile %Game% MD5 | find /v ":" > %md5_road%
