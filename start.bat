@@ -6,8 +6,9 @@ copy /y "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Crack\Art
 copy /y "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Crack\Game\steam_api64.dll" "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\steam_api64.dll"
 rem 判断是否已开启Anti-cheat
 set md5=6ea87d309cbda60c53948769b8d595c4
-certutil -hashfile "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\start_protected_game.exe" MD5 | find /v ":" > md5.md5
-set /p now_md5=<md5.md5
+set road="D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Start\md5.md5"
+certutil -hashfile "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\start_protected_game.exe" MD5 | find /v ":" > %road%
+set /p now_md5=<%road%
 if not "%md5%" == "%now_md5%" (start /w /d "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game" "" "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\toggle_anti_cheat.exe")
 rem 打开FPS解锁工具
 start "" "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Start\EldenRingFPSUnlockAndMore.exe"
