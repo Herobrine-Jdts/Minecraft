@@ -16,7 +16,7 @@ if not "23390ac384575350c1286bb357666b81" == "%md5%" (copy /y "D:\Documents\ELDE
 del /q %md5_road%
 
 set Game="D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\steam_api64.dll"
-certutil -hashfile %Gmae% MD5 | find /v ":" > %md5_road%
+certutil -hashfile %Game% MD5 | find /v ":" > %md5_road%
 set /p md5=<%md5_road%
 if not "23390ac384575350c1286bb357666b81" == "%md5%" (copy /y "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Crack\Game\steam_api64.dll" %Game%)
 del /q %md5_road%
@@ -32,4 +32,4 @@ if not "6ea87d309cbda60c53948769b8d595c4" == "%md5%" (
 del /q %md5_road%
 
 rem 打开FPS解锁工具
-start "" "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Start\EldenRingFPSUnlockAndMore.exe"
+start /d "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Start" "" "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Start\EldenRingFPSUnlockAndMore.exe"
