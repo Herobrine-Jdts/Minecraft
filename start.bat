@@ -33,5 +33,9 @@ if not "6ea87d309cbda60c53948769b8d595c4" == "%md5%" (
 	goto label)
 del /q %md5_road%
 
-rem 打开FPS解锁工具
+echo 不打开游戏 请直接关闭
+pause
+
+rem 打开游戏
 start /d "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Start" "" "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\Start\EldenRingFPSUnlockAndMore.exe"
+start /d "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game" "" "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\eldenring.exe"
