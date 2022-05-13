@@ -33,7 +33,7 @@ if not "6ea87d309cbda60c53948769b8d595c4" == "%md5%" (
 	goto label)
 del /q %md5_road%
 
-echo 不打开游戏 请直接关闭
+echo 是否打开游戏
 pause
 
 rem 打开游戏
