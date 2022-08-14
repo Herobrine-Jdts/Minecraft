@@ -28,7 +28,7 @@ rem 判断是否已开启Anti-cheat
 set cheat="D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\start_protected_game.exe"
 certutil -hashfile %cheat% MD5 | find /v ":" > %md5_road%
 set /p md5=<%md5_road%
-if not "6ea87d309cbda60c53948769b8d595c4" == "%md5%" (
+if not "df06567e0b8941030aab81e5f89ebf8b" == "%md5%" (
 	start /w /d "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game" "" "D:\Documents\ELDEN.RING.Deluxe.Edition.Steam.Rip-InsaneRamZes\ELDEN RING\Game\toggle_anti_cheat.exe"
 	goto label)
 del /q %md5_road%
